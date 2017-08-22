@@ -1,9 +1,11 @@
 #!/bin/sh
 
+# create signed certificate list, if needed
 if [ ! -e index.txt ]; then
   touch index.txt
 fi
 
+# start numbering certificate serial numbers from 01, if needed
 if [ ! -e serial ]; then
   echo 01 > serial
 fi
