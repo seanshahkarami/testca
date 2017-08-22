@@ -1,3 +1,4 @@
 #!/bin/sh
 
-openssl ca -config openssl.cnf -in reqs/$1.pem -out certs/$1.pem -batch -notext
+name=$1
+openssl ca -config openssl.cnf -in reqs/$name.pem -out certs/$name.pem -batch -notext
