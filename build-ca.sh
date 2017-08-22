@@ -8,6 +8,7 @@ if [ ! -e serial ]; then
   echo 01 > serial
 fi
 
+# create directories for keys, requests and signed certificates
 mkdir -p private reqs certs
 chmod 700 private
 
